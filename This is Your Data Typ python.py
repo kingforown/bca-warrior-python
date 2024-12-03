@@ -1,10 +1,9 @@
-a=1
-b=1.1
-c="abi"
-d=True
+a = 1         # Integer
+b = 1.1       # Float
+c = "abi"     # String
+d = True      # Boolean
 
-print("This is Your Data Type :",type(a))
-print("This is Your Data Type :",type(b))
-print("This is Your Data Type :",type(c))
-print("This is Your Data Type :",type(d))
-
+print("This is Your Data Type :", type(a))  # Outputs: <class 'int'>
+print("This is Your Data Type :", type(b))  # Outputs: <class 'float'>
+print("This is Your Data Type :", type(c))  # Outputs: <class 'str'>
+print("This is Your Data Type :", type(d))  # Outputs: <class 'bool'>
