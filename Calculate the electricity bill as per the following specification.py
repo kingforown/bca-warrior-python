@@ -15,7 +15,7 @@ try:
     print("-"*48)
     current=int(input("| Enter The Current Month  Unit :"))
     print("-"*48)
-    store=current-previousS
+    store=current-previous
     STOREONE=50*0.50
     STORETWO=50*0.75
     STORETHREE=50*1.20
