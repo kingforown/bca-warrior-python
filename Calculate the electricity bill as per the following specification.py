@@ -6,7 +6,6 @@
 #   Add 20% additional surcharge
 
 
-
 print("-"*48)
 print("|             WELCOME TO APCPDCL               |")
 print("-"*48)
@@ -17,8 +16,8 @@ try:
     print("-"*48)
     store=current-previous
     STOREONE=50*0.50
-    STORETWO=50*0.75
-    STORETHREE=50*1.20
+    STORETWO=100*0.75
+    STORETHREE=150*1.20
     if current<previous:
         print("|     Enter Previous Month Less Than Unit      |")
         print("-"*48)
@@ -46,9 +45,9 @@ try:
         print("| TOTAL DUE   :","RS",ultra1+ultra3+SUR1,"                       |")
         print("-"*48)
 
-    elif store<=150:
+    elif store<=300:
         ultra1=STOREONE+STORETWO
-        ultra2=store-100
+        ultra2=store-150
         ultra3=ultra2*1.20
         SUR=ultra1+ultra3
         SUR1=SUR*0.20
@@ -59,17 +58,17 @@ try:
         print("| TOTAL DUE   :","RS",ultra1+ultra3+SUR1,"                      |")
         print("-"*48)
 
-    elif store>=250:
+    elif store>300:
         ultra1=STOREONE+STORETWO+STORETHREE
-        ultra2=store-150
-        ultra3=ultra2*1.50
-        SUR=ultra1+ultra3
+        ultra2=store-300
+        ultra=ultra2*1.50
+        SUR=ultra+ultra1
         SUR1=SUR*0.20
-        print("| ENERGY CHRGS:","RS",ultra1+ultra3,"                      |")
+        print("| ENERGY CHRGS:","RS",ultra1+ultra,"                      |")
         print("-"*48)
         print("| SURCHARGE   :","RS",SUR1,"                       |")
         print("-"*48)
-        print("| TOTAL DUE   :","RS",ultra1+ultra3+SUR1,"                      |")
+        print("| TOTAL DUE   :","RS",ultra1+ultra+SUR1,"                      |")
         print("-"*48)
  
 except ValueError:
